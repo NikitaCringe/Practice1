@@ -1,0 +1,332 @@
+@media screen and (max-width : 1024px) {
+    body {
+        font-size: .6em;
+    }
+
+    .section {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2.6em;
+    }
+
+    .content {
+        height: auto;
+        padding: 5em 0em;
+    }
+
+    .menu {
+        font-size: 1.4em;
+    }
+
+    .menu div {
+        text-align: center;
+    }
+
+    #one .button {
+        width: 18%;
+        margin-bottom: 8%;
+        margin-top: 2%;
+    }
+
+    .iconimg {
+        height: 15%;
+    }
+
+    .progress {
+        font-size: 1.5em;
+    }
+
+    .up {
+        height: 5%;
+        font-size: 2.2em;
+    }
+
+    .twoslide_content div img {
+        width: 70%
+    }
+
+    .twoslide_content {
+        margin-top: 5%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .twoslide ul {
+        list-style: url(img/mini%20circle.png);
+
+    }
+
+    .three_text {
+        font-size: 1.2em;
+    }
+
+    footer {
+        height: auto;
+        margin-top: -15%;
+    }
+
+    .three_content {
+        margin-top: 15%;
+    }
+
+    .landing {
+        margin-top: -12%;
+    }
+
+    .three_img img {
+        width: 100%;
+    }
+
+    .social {
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .content_nine {
+        margin-top: -25%;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+    .menu {
+        display: none;
+    }
+
+    .up {
+        display: none;
+    }
+
+    .logophone {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .icon {
+        flex-direction: column;
+    }
+
+    .icon div {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .button {
+        padding: 2%;
+        font-size: 2.5em;
+    }
+
+    .iconimg {
+        width: 40%;
+    }
+
+    .progress {
+        width: 80%;
+    }
+
+    .oneslide_h1 {
+        margin-top: -5%;
+    }
+
+    .twoslide_content {
+        flex-direction: column;
+        top: 3em;
+    }
+
+    .twoslide_content div {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 20%;
+    }
+
+    .twoslide_content div img {
+        width: 60%;
+    }
+
+    .twoslide {
+        font-size: 1.4em;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .twoslide ul {
+        list-style: none;
+    }
+
+    .reverse,
+    .noreverse {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-flow: column-reverse
+    }
+
+    .three_img {
+        margin-bottom: 15%;
+    }
+
+    .three_text {
+        margin-bottom: 15%;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .swiper-slide .button {
+        padding: 8%;
+        font-size: 1.5em;
+    }
+
+    .eight_content,
+    .eight_content1 {
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .eight_content div,
+    .eight_content1 div {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .content_nine {
+        text-align: center;
+        width: 100%;
+    }
+
+    .content_nine form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        font-size: 1.5em;
+
+    }
+
+    .content_nine form input {
+        width: 40%;
+        margin: 0 auto;
+        padding: 2%;
+        margin-bottom: 2%;
+    }
+
+    .button1 {
+        font-size: 1em;
+        width: 80%;
+        padding: 2%;
+        left: 16%;
+        display: block;
+        background: rgba(81, 132, 227, 0.7);
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 2em;
+        position: relative;
+        top: 5%;
+    }
+}
+
+
+@media screen and (max-width : 480px) {
+
+    #one .button {
+        width: 30%;
+        margin-bottom: 8%;
+        margin-top: 2%;
+    }
+
+    .menu__btn {
+        width: 5%;
+    }
+
+    .twoslide_content {
+        font-size: 1.5em;
+    }
+
+    .three_content {
+        font-size: .8em;
+    }
+
+    #seven {
+        width: 100%
+    }
+
+    .footer_div {
+        font-size: .6em;
+    }
+
+    footer {
+        top: -5%;
+        position: relative;
+    }
+
+    .content_nine form {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .logophone img {
+        width: 30%;
+    }
+
+
+    .icon div {
+        font-size: 1.5em;
+    }
+
+    .twoslide_content div {
+        font-size: 1em;
+    }
+
+    .twoslide {
+        font-size: 1em;
+    }
+
+    .three_text {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .content_nine form {
+        font-size: 1em;
+    }
+
+    .text,
+    .text1 {
+        font-size: 1.8em;
+    }
+
+    .three_img {
+        width: 60%;
+    }
+}

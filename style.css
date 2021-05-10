@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: "Roboto";
+}
+
+
+
+.logophone {
+    display: none;
+    text-align: center;
+    height: 60%
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+    position: fixed;
+
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 3%;
+    height: 3%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transition-duration: .5s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    z-index: 2;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 8px 0px 6px rgba(0, 0, 0, 0.29);
+    transition-duration: .5s;
+}
+
+.menu__item {
+    display: block;
+    padding: 2% 4%;
+    color: black;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.8em;
+    padding: 0px;
+    position: relative;
+    top: 10%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.one {
+    background-image: url(img/1%20slide.jpg);
+    background-size: 100% 100%;
+}
+
+.two {
+    background-image: url(img/2%20slide.png);
+    background-size: 100% 100%;
+}
+
+.three {
+    background-image: url(img/3%20slide%20back.png);
+    background-size: 100% 100%;
+}
+
+.four {
+    background-image: url(img/4%20slide%20back.png);
+    background-size: 100% 100%;
+}
+
+.five {
+    background-image: url(img/5%20slide%20back.png);
+    background-size: 100% 100%;
+}
+
+.six {
+    background-image: url(img/6%20slide%20back.png);
+    background-size: 100% 100%;
+}
+
+.seven {
+    background: #F4F4F4;
+}
+
+.eight {
+    background: #FFFFFF;
+}
+
+.nine {
+    background: #F0F0F0;
+}
+
+
+
+
+header {
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+
+.menu {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+.menu div {
+    height: 100%;
+    box-shadow: 0px 3px 0px 0 #000 inset, 0px 0px 0 #333333 inset;
+
+}
+
+.menu div a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .8s;
+}
+
+
+.menu a {
+    color: black;
+}
+
+.menu div:nth-child(1) {
+    box-shadow: 0px 0px 0px 0 #000 inset, 0px 0px 0 #333333 inset;
+
+}
+
+.menu div a:hover {
+    background: rgb(239, 239, 239);
+    box-shadow: 0px 0px 0px 0 #000 inset, 0px -3px 0 #333333 inset;
+    font-weight: 900;
+
+}
+
+.menu div:nth-child(1):hover a {
+    background: white;
+    box-shadow: 0px 0px 0px 0 #000 inset, 0px 0px 0 #333333 inset;
+}
+
+#one h1 {
+    top: 2%;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.text,
+.text1 {
+    color: white;
+    width: 100%;
+    position: relative;
+    top: 6%;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.text1 {
+    top: 10%;
+}
+
+.button {
+    position: relative;
+    top: 12%;
+    color: white;
+    display: block;
+    background: rgba(81, 132, 227, 0.7);
+    font-size: 2em;
+    width: 12%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 2em;
+    transition: .6s;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 25%;
+    height: 24%;
+    width: 100%;
+
+}
+
+.iconimg {
+    width: 20%;
+    text-align: center;
+}
+
+.progress {
+    width: 40%;
+    font-size: 1.8em;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    height: auto
+}
+
+.up {
+    position: absolute;
+    width: 4%;
+    font-size: 3em;
+    font-weight: 900;
+    display: flex;
+    height: 8%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background: rgba(255, 103, 103, 0.42);
+    border-radius: 100%;
+    position: fixed;
+    color: #ffffff;
+    z-index: 5;
+    top: 7%;
+    left: 2%;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    box-shadow: inset 0 0 2px #333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.twoslide {
+    font-weight: 600;
+    top: 5%;
+    position: relative;
+    height: 20%;
+    padding: 0px;
+    margin: 0px;
+    line-height: 2em;
+
+
+}
+
+.twoslide div {
+    font-size: 1.2em;
+}
+
+.twoslide ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: url(img/big%20cricle.png);
+}
+
+.twoslide_content {
+    font-size: 2em;
+    width: 100%;
+    height: 60%;
+    top: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.twoslide_content div {
+    text-align: center;
+    font-weight: 400;
+    width: 25%
+}
+
+.twoslide_content div:nth-child(1) strong {
+    color: #FF8A77;
+}
+
+.twoslide_content div:nth-child(2) strong {
+    color: #27C600;
+}
+
+.twoslide_content div:nth-child(3) strong {
+    color: #0956ED;
+}
+
+.twoslide_content div:nth-child(4) strong {
+    color: #84A0FD;
+}
+
+.three_content {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    position: relative;
+    top: -3%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.three_text {
+    width: 70%;
+}
+
+.swiper-container {
+    width: 80%;
+    position: relative;
+    height: 70%;
+    display: flex;
+    background: #EFEFEF;
+}
+
+.swiper-container > .swiper-wrapper {
+    height: 100%;
+    width: 100%
+}
+
+.swiper-container > .swiper-wrapper > .swiper-slide {
+    display: flex;
+}
+
+.swiper-container > .swiper-wrapper > .swiper-slide > div:nth-child(1) {
+    width: 20%;
+    background: white;
+    padding-top: 4%;
+}
+
+.swiper-container > .swiper-wrapper > .swiper-slide > div:nth-child(2) {
+    width: 80%;
+}
+
+.swiper-container .swiper-pagination-bullet {
+    background-color: #ff3d3d;
+    margin: 0 auto;
+    padding: .5%;
+}
+
+.eight_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5%;
+}
+
+.eight_content div {
+    background: #EBEBEB;
+    width: 30%;
+}
+
+.eight_content1 {
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    margin: 0 auto;
+    height: 30%;
+}
+
+.eight_content1 div {
+    background: #EBEBEB;
+    width: 45%;
+}
+
+
+.content_nine {
+    width: 60%;
+    height: 20%;
+    font-size: 2.5em;
+    position: absolute;
+    top: 55%;
+
+}
+
+#form {
+    width: 100%;
+}
+
+#form input {
+    font-size: .6em;
+
+}
+
+#form input:nth-child(3) {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background: #202020;
+    width: 100%;
+    height: 30vh;
+}
+.button1 {
+        font-size: 1em;
+        width: 50%;
+        padding: 2%;
+        left: 46%;
+        display: block;
+        background: rgba(81, 132, 227, 0.7);
+        font-size: 1.5em;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 2em;
+        position: relative;
+        top: 5%;
+    }
+.footer_div {
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    padding-top: 2%;
+    display: flex;
+
+}
+
+.social {
+    background: #ffffff;
+    height: 25%;
+    width: 40%;
+    justify-content: space-around;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 60%;
+}
